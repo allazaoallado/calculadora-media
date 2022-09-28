@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media</title>
-    
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -40,7 +39,23 @@
             var resposta = window.document.getElementById('resposta')
             var soma = (nota1 + nota2 + nota3) / 3
         
-            resposta.innerHTML = `A sua média é <strong>${soma.toFixed(2).replace('.', ',')}</strong>`
+            resposta.innerHTML = `A sua média é <strong>${soma.toFixed(1).replace('.', ',')}</strong>`
+        }
+
+        var a = window.document.getElementById('somar')
+        
+        a.addEventListener('mouseout', sair)
+        a.addEventListener('mouseenter', entrar)
+
+        function entrar(){
+            
+            a.style.font =' bold 12pt Arial'
+            
+            
+        }
+
+        function sair(){
+            a.style.font =' normal 12pt Arial'
         }
         </script>
 

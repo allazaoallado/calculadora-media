@@ -70,18 +70,22 @@ body {
     width: 25px;
     height: 20px;
     font: normal 12pt arial;
+    cursor: pointer;
 }
 
 #nota2 {
     width: 25px;
     height: 20px;
     font: normal 12pt arial;
+    cursor: pointer;
 }
 
 #nota3 {
     width: 25px;
     height: 20px;
     font: normal 12pt arial;
+    cursor: pointer;
+   
 }
 
 #somar {
@@ -91,6 +95,11 @@ body {
     border-radius: 10%;
     height: 30px;
 
+}
+
+#somar:hover{
+  
+    cursor: pointer;
 }
 
 #resposta {

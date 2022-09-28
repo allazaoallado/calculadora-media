@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <script src="/script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="quadrado">
+        <h1 id="titulo">Calcule sua Média Escolar</h1>
+        <p id="texto_1">Para calcular a sua Média insira as suas notas abaixo:</p>
+
+        <div class="trimestres">
+            <p id="trimestre1">1° trimestre:</p>
+            <p id="trimestre2">2° trimestre:</p>
+            <p id="trimestre3">3° trimestre:</p>
+        </div>
+
+        <div class="botoes">
+            <input type="text" name="nota1" id="nota1"><br>
+            <input type="text" name="nota2" id="nota2"><br>
+            <input type="text" name="nota3" id="nota3">
+        </div>
+
+        <input type="button" value="SOMAR" onclick="media()" id="somar">
+        <p id="resposta"></p>
+
+    </div>
+
+</body>
+
+</html>

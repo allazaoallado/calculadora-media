@@ -38,9 +38,52 @@
             var nota3 = Number(nota_3.value.replace(',', '.'))
             var resposta = window.document.getElementById('resposta')
             var soma = (nota1 + nota2 + nota3) / 3
+
         
-            resposta.innerHTML = `A sua média é <strong>${soma.toFixed(1).replace('.', ',')}</strong>`
+
+            var agora = new Date()
+            var hora = agora.getHours()// para puxar o horário atual
+            var saudacao = ''
+            if(hora > 12 && hora < 18){
+            saudacao ='Boa tarde'
+            }else if(hora >= 18 || hora < 6){
+            saudacao ='Boa noite'
+            }else{
+            saudacao = 'Bom dia'
+            }
+            resposta.innerHTML = `${saudacao}, sua média é <strong>${soma.toFixed(1).replace('.', ',')}</strong>.`
+
+            if(nota1 < 0 || nota1 > 10){
+                window.alert('Valor da nota do 1° trimestre é inválida.')
+                resposta.innerHTML =''
+
+            }else if(nota2 < 0 || nota2 > 10){
+                window.alert('Valor da nota do 2° trimestre é inválida.')
+                resposta.innerHTML ='' 
+        
+            }else if(nota3 < 0 || nota3 > 10){
+                window.alert('Valor da nota do 3° trimestre é inválida.')
+                resposta.innerHTML ='' 
+      
         }
+
+            verificador_1 = 1 + nota1
+            verificador_2 = 1 + nota2
+            verificador_3 = 1 + nota3
+            if(isNaN(verificador_1)){
+            window.alert('Valor da nota do 1° trimestre é inválida.')
+            resposta.innerHTML =''
+
+            }else if(isNaN(verificador_2)){
+             window.alert('Valor da nota do 2° trimestre é inválida.')
+             resposta.innerHTML =''
+
+            }else if(isNaN(verificador_3)){
+            window.alert('Valor da nota do 3° trimestre é inválida.')
+            resposta.innerHTML =''
+
+        }
+    }
 
         var a = window.document.getElementById('somar')
         
@@ -57,6 +100,7 @@
         function sair(){
             a.style.font =' normal 12pt Arial'
         }
+        
         </script>
 
     </div>

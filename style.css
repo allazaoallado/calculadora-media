@@ -1,9 +1,48 @@
 #nota1 {
- width: 5%;
+ width: 3%;
+ position: absolute;
+ margin-top: 1.6%;
+ margin-left: 2%;
 }
 #nota2 {
- width: 5%;
+ width: 3%;
+ position: absolute;
+ margin-top: 1.5%;
+ margin-left: 2%;
 }
 #nota3 {
- width: 5%;
+ width: 3%;
+ position: absolute;
+ margin-top: 1.6%;
+ margin-left: 2%;
+ 
+}
+
+body {
+    font: normal 23pt Arial;
+    background-color: #141313;
+    
+}
+
+.quadrado {
+    background-color: #000000;
+    color: white;
+    height: 80%;
+    width: 50%;
+    position: absolute;
+    margin-left: 23%;
+    margin-top: 3.5%;
+
+}
+
+#texto{
+    margin-left: 3%;
+}
+
+h1{
+   text-align: center; 
+}
+
+#button{
+    font: normal 15pt Arial;
 }

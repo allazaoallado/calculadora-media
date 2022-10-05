@@ -1,20 +1,20 @@
 function somar() {
- var nota_1 = window.document
+ let nota_1 = window.document
   .getElementById('nota1')
- var nota_2 = window.document
+ let nota_2 = window.document
   .getElementById('nota2')
- var nota_3 = window.document
+ let nota_3 = window.document
   .getElementById('nota3')
- var soma = (Number(nota_1.value.replace(',','.')) +
+ let soma = (Number(nota_1.value.replace(',','.')) +
    Number(nota_2.value.replace(',','.')) + Number(nota_3.value.replace(',','.'))
    ) / 3
 
- var resposta = window.document
+ let resposta = window.document
   .getElementById('resposta')
 
-  var agora = new Date()
-  var hora = agora.getHours()// para puxar o horário atual
-  var saudacao = ''
+  let agora = new Date()
+  let hora = agora.getHours()// para puxar o horário atual
+  let saudacao = ''
   if(hora > 12 && hora < 18){
   saudacao ='Boa tarde'
   }else if(hora >= 18 || hora < 6){
@@ -35,10 +35,6 @@ resposta.innerHTML = ''
 resposta.innerHTML = `${saudacao}, sua média é ${soma.toFixed(1).replace('.',',')}.`
 }
 
-
-
- 
- 
 }
 
 

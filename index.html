@@ -3,22 +3,17 @@
 <head>
  <title>Calcula média</title>
  <link rel="stylesheet" href="style.css">
+ <script src="script.js"></script>
 </head>
 <body>
-<div class="quadrado">
+<main>
     <h1>Calculadora de Média</h1>
-<div id="texto">
-
-<p>Calcule a sua média a baixo:</p>
-<div class = 'trimestres'>1° Trimestre: <input type = 'text' id = 'nota1'><br>
-2° Trimestre: <input type = 'text' id = 'nota2'><br>
-3° Trimestre: <input type = 'text' id = 'nota3'><br></div><br>
-<input type = 'button' id = 'button' value = 'SOMAR' onclick="somar()">
-<p id="resposta"> </p>
-
-</div>
-
- <script src="script.js"></script>
-</div>
+    <p>Calcule a sua média a baixo:</p>
+    1° Trimestre: <input type = 'text' id = 'nota1' class="notas"><br>
+    2° Trimestre: <input type = 'text' id = 'nota2' class="notas"><br>
+    3° Trimestre: <input type = 'text' id = 'nota3' class="notas"><br>
+    <input type = 'button' id = 'button' value = 'SOMAR' onclick="somar()">
+    <p id="resposta"></p>  
+</main>
 </body>
 </html>

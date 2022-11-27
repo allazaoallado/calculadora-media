@@ -5,9 +5,12 @@ function somar() {
   .getElementById('nota2')
  let nota_3 = window.document
   .getElementById('nota3')
+  let nota_4 = window.document
+  .getElementById('nota4')
  let soma = (Number(nota_1.value.replace(',','.')) +
    Number(nota_2.value.replace(',','.')) + Number(nota_3.value.replace(',','.'))
-   ) / 3
+    + Number(nota_4.value.replace(',','.')))
+   / 4
 
  let resposta = window.document
   .getElementById('resposta')

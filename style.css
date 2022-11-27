@@ -13,9 +13,10 @@ main{
     text-align: center;
     color: white;
     background-color: black;
-    max-height: 1000px;
+    /* max-height: 1000px; */
     min-height: 550px;
-    max-width: 900px;
+    min-width: 5px;
+    /* max-width: 800px; */
     padding: 2px;
     border-radius: 10px;
     
@@ -30,7 +31,9 @@ input.notas {
     margin: 15px;
     height: 35px;
     }
-
+    input:hover{
+        cursor: pointer;
+    }
     input{
         height: 25px;
     }

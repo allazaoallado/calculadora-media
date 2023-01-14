@@ -1,20 +1,27 @@
 body{
-    background-color: darkviolet;
+    background-color: #0D0D0D;
+    color: #D9D9D9;
 
 }
 
 
 main{
-    background-color: red;
+    background-color: #0D0D0D;
     margin: auto;
-    width: 380px;
-    height: 800px;
+    width: 320px;
+
     font-size: 45px;
     padding: 10px
+}
+
+header{
+    padding: 0;
 }
 h1{
     font-size: 58px;
     margin-bottom: 30px;
+    text-align: center;
+    padding: 10px 0px;
 }
 
 .botoes{
@@ -25,8 +32,8 @@ h1{
 
 #resultado{
     font-size: 38px;
-    padding-top: 10px;
-    padding-bottom: 80px;
+    margin-top: 40px;
+    margin-bottom: 80px;
 }
 .botoes button{
     height: 50px;
@@ -38,7 +45,7 @@ h1{
 
 .valores p{
     display: inline-block;
-    padding-bottom: 10px;
+    margin-bottom: 25px;
 }
 
 .valores input{

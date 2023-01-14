@@ -1,0 +1,46 @@
+body{
+    background-color: darkviolet;
+}
+
+
+main{
+    background-color: red;
+    margin: auto;
+    width: 300px;
+    font-size: 30px;
+    padding: 10px
+}
+h1{
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+
+.botoes{
+    width: 186px;
+    margin: auto;
+}
+
+#resultado{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.botoes button{
+    height: 30px;
+    font-size: 20px;
+    font-weight: bolder;
+
+}
+
+.valores p{
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.valores input{
+    width: 30px;
+    height: 28px;
+    position: relative;
+    bottom: 2px;
+    font-size: 21px;
+}
+

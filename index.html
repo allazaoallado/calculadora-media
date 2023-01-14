@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -15,29 +16,27 @@
     </header>
     <main>
 
-        <section class="valores">
-            <section id="nota1">
-                <p>1 nota:</p><input type="text">
-            </section>
-            <section id="nota2">
-                <p>2 nota:</p><input type="text">
-            </section>
-            <section id="nota3">
-                <p>3 nota:</p><input type="text">
-            </section>
-            <section id="nota4">
-                <p>4 nota:</p><input type="text">
-            </section>
-        </section>
-        <section class="resposta">
-            <p id="resultado">
-                Sua media e:
-            </p>
-        </section>
-        <section class="botoes">
-            <button>Calcular</button>
-            <button type="reset">Limpar</button>
+        <form action="#">
+            <section class="valores">
 
+                    <p>1 nota:</p><input type="text" id="nota1">
+                
+                    <p>2 nota:</p><input type="text" id="nota2">
+                
+                    <p>3 nota:</p><input type="text" id="nota3">
+                
+                    <p>4 nota:</p><input type="text" id="nota4">
+            </section>
+            <section class="resposta">
+                <p id="resultado">
+                    Sua media e:
+                </p>
+            </section>
+            <section class="botoes">
+                <button onclick = "somar()" id="calcular" >Calcular</button >
+                <button type="reset" id="limpar">Limpar</button>
+    
+        </form>
 
 
     </main> 

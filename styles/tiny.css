@@ -11,7 +11,7 @@ main{
     width: 320px;
 
     font-size: 45px;
-    padding: 10px
+    padding: 10px 0px;
 }
 
 header{
@@ -21,7 +21,7 @@ h1{
     font-size: 58px;
     margin-bottom: 30px;
     text-align: center;
-    padding: 10px 0px;
+    
     display: inline-block;
     
 }
@@ -29,6 +29,11 @@ h1{
 input{
     border-radius: 2px;
     border-color: #d3d3d3;
+    margin-left: 8px;
+}
+
+footer p{
+    font-size: 18px;
 }
 
 .botoes{
@@ -39,8 +44,8 @@ input{
 
 #resultado{
     font-size: 38px;
-    margin-top: 40px;
-    margin-bottom: 80px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 .botoes button{
     height: 50px;
@@ -61,6 +66,13 @@ input{
     position: relative;
     bottom: 2px;
     font-size: 30px;
+}
+
+
+footer{
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 3px;
 }
 
 

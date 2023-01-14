@@ -16,7 +16,7 @@ let nota_4 = window.document
   let resultado = window.document
 .getElementById('resultado')
 
-  resultado.innerHTML = `Sua media e: ${soma.toFixed(1).replace('.',',')}`
+  resultado.innerHTML = `Sua média e: ${soma.toFixed(1).replace('.',',')}`
   nota_1.style.borderColor = "#d3d3d3"
   nota_2.style.borderColor = "#d3d3d3"
   nota_3.style.borderColor = "#d3d3d3"
@@ -28,23 +28,23 @@ let nota_4 = window.document
     nota_2.style.borderColor = "#FF0F0F"
     nota_3.style.borderColor = "#FF0F0F"
     nota_4.style.borderColor = "#FF0F0F"
-    resultado.innerHTML =  'Sua media e:'
-  }else if(Number(nota_1.value) < 0 || Number(nota_1.value) > 10 || isNaN(Number(nota_1.value))){
+    resultado.innerHTML =  'Sua média e:'
+  }else if(Number(nota_1.value).replace(',','.') < 0 || Number(nota_1.value).replace(',','.') > 10 || isNaN(Number(nota_1.value).replace(',','.'))){
     window.alert('1 nota invalida')
     nota_1.style.borderColor = "#FF0F0F"
-    resultado.innerHTML =  'Sua media e:'
-  }else if(Number(nota_2.value) < 0 || Number(nota_2.value) > 10 || isNaN(Number(nota_2.value))){
+    resultado.innerHTML =  'Sua média e:'
+  }else if(Number(nota_2.value).replace(',','.') < 0 || Number(nota_2.value).replace(',','.') > 10 || isNaN(Number(nota_2.value).replace(',','.'))){
     window.alert('2 nota invalida')
     nota_2.style.borderColor = "#FF0F0F"
-    resultado.innerHTML =  'Sua media e:'
-  }else if(Number(nota_3.value) < 0 || Number(nota_3.value) > 10 || isNaN(Number(nota_3.value))){
+    resultado.innerHTML =  'Sua média e:'
+  }else if(Number(nota_3.value).replace(',','.') < 0 || Number(nota_3.value).replace(',','.') > 10 || isNaN(Number(nota_3.value).replace(',','.'))){
     window.alert('3 nota invalida')
     nota_3.style.borderColor = "#FF0F0F"
-    resultado.innerHTML =  'Sua media e:'
-  }else if(Number(nota_4.value) < 0 || Number(nota_4.value) > 10 || isNaN(Number(nota_4.value))){
+    resultado.innerHTML =  'Sua média e:'
+  }else if(Number(nota_4.value).replace(',','.') < 0 || Number(nota_4.value).replace(',','.') > 10 || isNaN(Number(nota_4.value).replace(',','.'))){
     window.alert('4 nota invalida')
     nota_4.style.borderColor = "#FF0F0F"
-    resultado.innerHTML =  'Sua media e:'
+    resultado.innerHTML =  'Sua média e:'
   }
 }
 
@@ -60,7 +60,7 @@ let nota_3 = window.document
 let nota_4 = window.document
 .getElementById('nota4')
 let resultado = window.document.getElementById('resultado')
-resultado.innerHTML = `Sua media e:`
+resultado.innerHTML = `Sua média e:`
 nota_1.style.borderColor = "#d3d3d3"
 nota_2.style.borderColor = "#d3d3d3"
 nota_3.style.borderColor = "#d3d3d3"

@@ -22,14 +22,24 @@ let nota_4 = window.document
   nota_3.style.borderColor = "#d3d3d3"
   nota_4.style.borderColor = "#d3d3d3"
 
-  if(Number(nota_1.value) == 0 & Number(nota_2.value) == 0 & Number(nota_3.value) == 0 & Number(nota_4.value) == 0){
+  if(isNaN(soma)){
+    window.alert('Preecha os campos corretamente!!')
+    nota_1.style.borderColor = "#FF0F0F"
+    nota_2.style.borderColor = "#FF0F0F"
+    nota_3.style.borderColor = "#FF0F0F"
+    nota_4.style.borderColor = "#FF0F0F"
+    resultado.innerHTML =  'Sua média é:'
+  }else if(Number(nota_1.value) == 0 & Number(nota_2.value) == 0 & Number(nota_3.value) == 0 & Number(nota_4.value) == 0){
     window.alert("Preencha os campos!!")
     nota_1.style.borderColor = "#FF0F0F"
     nota_2.style.borderColor = "#FF0F0F"
     nota_3.style.borderColor = "#FF0F0F"
     nota_4.style.borderColor = "#FF0F0F"
     resultado.innerHTML =  'Sua média é:'
-  }else if(Number(nota_1.value).replace(',','.') < 0 || Number(nota_1.value).replace(',','.') > 10 || isNaN(Number(nota_1.value))){
+  }else if(isNaN(Number(nota_1.value).replace(',','.'))){
+    nota_1.style.borderColor = "#FF0F0F"
+    resultado.innerHTML =  'Sua média é:'
+  }else if(Number(nota_1.value).replace(',','.') < 0 || Number(nota_1.value).replace(',','.') > 10){
     nota_1.style.borderColor = "#FF0F0F"
     resultado.innerHTML =  'Sua média é:'
     window.alert('1 nota invalida')

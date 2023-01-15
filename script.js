@@ -29,23 +29,19 @@ let nota_4 = window.document
     nota_3.style.borderColor = "#FF0F0F"
     nota_4.style.borderColor = "#FF0F0F"
     resultado.innerHTML =  'Sua média é:'
-  }else if(Number(nota_1.value) < 0 || Number(nota_1.value) > 10 || isNaN(Number(nota_1.value))){
+  }else if(Number(nota_1.value).replace(',','.') < 0 || Number(nota_1.value).replace(',','.') > 10 || isNaN(Number(nota_1.value))){
     nota_1.style.borderColor = "#FF0F0F"
     resultado.innerHTML =  'Sua média é:'
     window.alert('1 nota invalida')
-  }else if(Number(nota_2.value) < 0 || Number(nota_2.value) > 10 || isNaN(Number(nota_2.value))){
+  }else if(Number(nota_2.value).replace(',','.') < 0 || Number(nota_2.value).replace(',','.') > 10 || isNaN(Number(nota_2.value))){
     nota_2.style.borderColor = "#FF0F0F"
     resultado.innerHTML =  'Sua média é:'
     window.alert('2 nota invalida')
-  }else if(Number(nota_2.value) < 0 || Number(nota_2.value) > 10 || isNaN(Number(nota_2.value))){
-    nota_2.style.borderColor = "#FF0F0F"
-    resultado.innerHTML =  'Sua média é:'
-    window.alert('2 nota invalida')
-  }else if(Number(nota_3.value) < 0 || Number(nota_3.value) > 10 || isNaN(Number(nota_3.value))){
+  }else if(Number(nota_3.value).replace(',','.') < 0 || Number(nota_3.value).replace(',','.') > 10 || isNaN(Number(nota_3.value))){
     nota_3.style.borderColor = "#FF0F0F"
     resultado.innerHTML =  'Sua média é:'
     window.alert('3 nota invalida')
-  }else if(Number(nota_4.value) < 0 || Number(nota_4.value) > 10 || isNaN(Number(nota_4.value))){
+  }else if(Number(nota_4.value).replace(',','.') < 0 || Number(nota_4.value).replace(',','.') > 10 || isNaN(Number(nota_4.value))){
     nota_4.style.borderColor = "#FF0F0F"
     resultado.innerHTML =  'Sua média é:'
     window.alert('4 nota invalida')
